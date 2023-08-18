@@ -1,0 +1,262 @@
+:root {
+    --vert: #3b8e46;
+    --beige: #ece2da;
+    --rose: #dc9f96;
+    --hover: #c02e44;
+    --rosa :#E0B9B4;
+}
+* {
+    margin: 0 ;
+    padding: 0 ;
+    font-family: "Syne", sans-serif;
+}
+
+header {
+    margin: 31px 0 26px 37px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+
+footer {
+    background-color: white;
+    text-align: center;
+    
+
+
+}
+
+footer a{
+    
+    text-decoration: none;
+    color: black;
+    font-family: "Syne", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+#branding{
+    display: none;
+}
+nav img{ 
+    width: 201px;
+    height: 25px;
+    margin-left: 37px ;
+    margin-top: 31px;
+    }
+    
+    
+.page-item-38 {
+    display: none;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: "Syne", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  } 
+
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu ul{
+    display: flex;
+}
+
+.page-item-13 {
+    margin-top: 32px;
+    margin-right: 40px;
+
+}
+
+.page-item-13 a{
+    color: black;
+}
+.page-item-13 a:visited{
+    color: black;
+}
+.page-item-13 a:hover{
+    font-family: "Syne", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+.page-item-8 {
+    background-color: var(--rose);
+    padding: 31px 61px;
+    transition: 0.2s;
+}
+
+.page-item-8 a{
+    color: white;
+}
+.page-item-8 a:visited{
+    color: white !important ;
+}
+
+.page-item-8:hover{
+   background-color: #c02e44;
+}
+
+.page-item-8 a:hover{
+    color: white;
+}
+ /* enlever modifier */
+.post-edit-link{
+    display: none;
+}
+
+/* page INDEX */
+
+
+
+/*section gouts */
+
+/* FRAISE */
+
+.gout {
+    
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 393px !important;
+    height: 262px !important;
+}
+
+.conteneur-gouts{
+    width: 393px !important;
+    height: 262px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* page NOUS RENCONTRER */
+
+/* formulaire rencontrer */
+.formulaire-rencontrer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 383px !important;
+}
+.formulaire-rencontrer input{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.nom-formulaire-rencontrer input {
+    border-radius: 7px !important;
+    height: 71px !important;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04) !important;
+    border-style: none !important;
+  }
+
+
+  .e-mail-formulaire-rencontrer input {
+    border-radius: 7px !important;
+    height: 4.438rem !important;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04) !important;
+    border-style: none !important;
+  }
+
+  .message-formulaire-rencontrer input {
+    border-radius: 7px !important;
+    z-index: 2;
+    height: 14.813rem !important;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04) !important;
+    border-style: none !important;
+  }
+
+  .bouton-rencontrer {
+    background-color: var(--rose) !important;
+    color: white !important;
+    font-size: 0.938rem !important;
+    width: 12.375rem !important;
+    height: 3.438rem !important;
+    padding: 9px 0px !important;
+    border-style: none !important;
+    border-radius: 5px !important;
+    transition: 0.2s !important;
+    display: block !important;
+    margin: 2.5rem auto !important;
+  }
+
+  .bouton-rencontrer:hover {
+    background-color: #C02E44 !important;
+    padding: 9px 56px 9px 57px !important;
+    border-style: none !important;
+    border-radius: 5px !important;
+    transition: 0.2s !important;
+  }
+
+  .elementor-column-gap-default .elementor-column .elementor-element-populated{
+    padding: 0 !important;
+}
+
+/*  PAGE COMMANDER */
+
+.margin-commander {
+
+} 
+
+.background-commander{
+    width: 192.533px !important;
+height: 128.355px !important;
+}
+
+.arriere-plan-commander{
+    display: flex;
+    width: 192.533px !important;
+    height: 128.355px !important;
+}
+
+.largeur-gout{
+    display: flex;
+    justify-content: center;
+    width: 860px;
+}
+
+
+/* formulaire jetform */
+
+
+.groupe-boutons >div.wp-block-group__inner-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.moins{
+
+}
+
+.plus{
+    border-style: none !important;
+  color: white !important;
+  font-size: 1.25rem !important;
+  width: 1.938rem !important;
+  height: 1.719rem !important;
+  border-radius: 0 5px 0 0 !important;
+  margin-bottom: 0.5px !important;
+}
+.boutons {
+    background-color: transparent !important;
+    border-radius: 50px;
+}
+.ok{
+    background-color: #E0B9B4 !important;
+}
+
+.wp-block-button__link {
+    background-color: transparent !important;
+}
+
+.wp-block-button__link .wp-element-button {
+    background-color: #c02e44 !important;
+    z-index: 2;
+}

@@ -1,0 +1,182 @@
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 7562
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 7843
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\theme.php on line 3538
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\theme.php on line 3763
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 5403
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 5403
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4661
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_name" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6948
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6953
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_date" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6991
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6999
+[27-Jul-2023 14:07:41 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4704
+[27-Jul-2023 14:07:41 UTC] PHP Fatal error:  Uncaught TypeError: Elementor\TemplateLibrary\Source_Local::on_save_post(): Argument #2 ($post) must be of type WP_Post, null given, called in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php on line 310 and defined in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\template-library\sources\local.php:1112
+Stack trace:
+#0 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(310): Elementor\TemplateLibrary\Source_Local->on_save_post(230, NULL)
+#1 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4715): do_action('save_post', 230, NULL, true)
+#4 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#5 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\db.php(235): wp_update_post(Array)
+#6 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(1272): Elementor\DB->save_plain_text(230)
+#7 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(753): Elementor\Core\Base\Document->save_elements(Array)
+#8 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\documents-manager.php(545): Elementor\Core\Base\Document->save(Array)
+#9 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#10 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#11 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(308): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#12 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#13 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#14 C:\Users\auffr\Local Sites\planty\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#15 {main}
+  thrown in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\template-library\sources\local.php on line 1112
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 7562
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 7843
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\theme.php on line 3538
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\theme.php on line 3763
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 5403
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 5403
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4661
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_name" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6948
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6953
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_date" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6991
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6999
+[27-Jul-2023 14:30:40 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4704
+[27-Jul-2023 14:30:40 UTC] PHP Fatal error:  Uncaught TypeError: Elementor\TemplateLibrary\Source_Local::on_save_post(): Argument #2 ($post) must be of type WP_Post, null given, called in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php on line 310 and defined in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\template-library\sources\local.php:1112
+Stack trace:
+#0 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(310): Elementor\TemplateLibrary\Source_Local->on_save_post(234, NULL)
+#1 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4715): do_action('save_post', 234, NULL, true)
+#4 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#5 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\db.php(235): wp_update_post(Array)
+#6 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(1272): Elementor\DB->save_plain_text(234)
+#7 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(753): Elementor\Core\Base\Document->save_elements(Array)
+#8 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\documents-manager.php(545): Elementor\Core\Base\Document->save(Array)
+#9 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#10 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#11 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(308): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#12 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#13 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#14 C:\Users\auffr\Local Sites\planty\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#15 {main}
+  thrown in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\template-library\sources\local.php on line 1112
+[28-Jul-2023 11:32:14 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "page_template" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php:4590
+Stack trace:
+#0 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#1 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\db.php(235): wp_update_post(Array)
+#2 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(1272): Elementor\DB->save_plain_text(333)
+#3 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(753): Elementor\Core\Base\Document->save_elements(Array)
+#4 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\documents-manager.php(545): Elementor\Core\Base\Document->save(Array)
+#5 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#7 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(308): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#8 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#9 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\auffr\Local Sites\planty\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#11 {main}
+  thrown in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4590
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:35:46 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:39:19 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:39:19 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:39:26 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:39:26 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:59:17 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:59:17 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:59:17 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:59:17 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 08:59:17 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 08:59:17 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:01:03 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:01:03 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:01:03 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:01:03 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:01:03 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:01:03 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:03:19 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:03:19 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:03:19 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:03:19 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:03:19 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:03:19 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:06:49 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:06:49 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:06:49 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:06:49 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:06:49 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:06:49 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:08:37 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:08:37 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:08:37 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:08:37 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:08:37 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:08:37 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:49:00 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:49:00 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:49:00 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:49:00 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 09:49:00 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[04-Aug-2023 09:49:00 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 7562
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 7843
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\theme.php on line 3538
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\theme.php on line 3763
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 5403
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 5403
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4661
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_name" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6948
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6953
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_date" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6991
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 6999
+[04-Aug-2023 11:48:47 UTC] PHP Warning:  Attempt to read property "post_type" on null in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php on line 4704
+[04-Aug-2023 11:48:47 UTC] PHP Fatal error:  Uncaught TypeError: Elementor\TemplateLibrary\Source_Local::on_save_post(): Argument #2 ($post) must be of type WP_Post, null given, called in C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php on line 310 and defined in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\template-library\sources\local.php:1112
+Stack trace:
+#0 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(310): Elementor\TemplateLibrary\Source_Local->on_save_post(455, NULL)
+#1 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4715): do_action('save_post', 455, NULL, true)
+#4 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#5 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\db.php(235): wp_update_post(Array)
+#6 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(1272): Elementor\DB->save_plain_text(455)
+#7 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\base\document.php(753): Elementor\Core\Base\Document->save_elements(Array)
+#8 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\documents-manager.php(545): Elementor\Core\Base\Document->save(Array)
+#9 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#10 C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#11 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(308): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#12 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#13 C:\Users\auffr\Local Sites\planty\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#14 C:\Users\auffr\Local Sites\planty\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#15 {main}
+  thrown in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\template-library\sources\local.php on line 1112
+[04-Aug-2023 17:01:26 UTC] PHP Parse error:  syntax error, unexpected token "<" in C:\Users\auffr\Local Sites\planty\app\public\wp-content\themes\child theme\footer.php on line 6
+[05-Aug-2023 04:49:45 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[05-Aug-2023 04:49:45 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[05-Aug-2023 04:49:45 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[05-Aug-2023 04:49:45 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[05-Aug-2023 04:49:45 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[05-Aug-2023 04:49:45 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[05-Aug-2023 05:31:28 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[05-Aug-2023 05:31:28 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[05-Aug-2023 05:31:28 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[05-Aug-2023 05:31:28 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[05-Aug-2023 05:31:28 UTC] PHP Warning:  Undefined array key 1 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 79
+[05-Aug-2023 05:31:28 UTC] PHP Warning:  Undefined array key 2 in C:\Users\auffr\Local Sites\planty\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 80
+[16-Aug-2023 16:04:07 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\Users\auffr\Local Sites\planty\app\public\wp-admin\includes\translation-install.php on line 68
