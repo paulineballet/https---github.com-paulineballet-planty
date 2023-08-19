@@ -201,7 +201,51 @@ nav li a {
 
 /*  PAGE COMMANDER */
 
-.margin-commander {
+.gout-quantite{
+    width: 192.533px;
+    height: 128.355px;
+    margin-bottom: 2.5rem;
+    margin-right: 1.875rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "syne", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.fraise-quantite{
+    background-image: url("../images/commander/fraise.png");
+    }
+
+.pamplemousse-quantite{
+    background-image: url("../images/commander/pamplemousse.png");
+
+        }
+
+        .framboise-quantite{
+    background-image: url("../images/commander/framboise.png");
+}
+
+.citron-quantite{
+    background-image: url("../images/commander/citron.png");
+;}
+
+
+.groupe-quantites div.wp-block-group__inner-container{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+.wp-block-group__inner-container{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.empilement-plus-moins{
+    display: flex;
+    flex-direction: column;
 
 } 
 
@@ -224,32 +268,65 @@ height: 128.355px !important;
 
 
 /* formulaire jetform */
-
+input.input-gouts{
+    width: 82px !important;
+    height: 56px !important;
+}
 
 .groupe-boutons >div.wp-block-group__inner-container{
     display: flex;
     flex-direction: row;
 }
 
+.moins, .plus{
+    background-color: #DC9F96;
+    width: 1.938rem;
+    height: 1.719rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    
+
+}
+
+
+.plus a, .moins a, .ok a{
+    padding: 0;
+    
+
+}
+.plus {
+  border-radius: 0 5px 0 0;
+  border-bottom: ;
+}
+
 .moins{
-
+    border-radius: 0 0 5px 0;
+    
 }
-
-.plus{
-    border-style: none !important;
-  color: white !important;
-  font-size: 1.25rem !important;
-  width: 1.938rem !important;
-  height: 1.719rem !important;
-  border-radius: 0 5px 0 0 !important;
-  margin-bottom: 0.5px !important;
-}
-.boutons {
+.plus-moins .is-vertical {
     background-color: transparent !important;
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+
 }
 .ok{
     background-color: #E0B9B4 !important;
+    width: 6.25rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.ok >div{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .wp-block-button__link {
@@ -257,6 +334,6 @@ height: 128.355px !important;
 }
 
 .wp-block-button__link .wp-element-button {
-    background-color: #c02e44 !important;
+    background-color: transparent !important;
     z-index: 2;
 }
