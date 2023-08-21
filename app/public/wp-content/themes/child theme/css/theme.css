@@ -22,7 +22,7 @@ header {
 
 footer {
     background-color: white;
-    text-align: center;
+    height: 50px;
     
 
 
@@ -37,6 +37,9 @@ footer a{
     font-weight: 400;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px !important;
     
 }
 #branding{
@@ -235,13 +238,14 @@ nav li a {
 
 .groupe-quantites div.wp-block-group__inner-container{
     display: flex !important;
+    flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
     flex-wrap: wrap !important;
+    margin-right: 20px;
 }
 .wp-block-group__inner-container{
-    display: flex !important;
-    flex-direction: column !important;
+
 }
 .empilement-plus-moins{
     display: flex;
@@ -268,9 +272,12 @@ height: 128.355px !important;
 
 
 /* formulaire jetform */
+
 input.input-gouts{
-    width: 82px !important;
+    width: 51px !important;
     height: 56px !important;
+    border-radius: 5px 0 0 5px;
+    border-style: none;
 }
 
 .groupe-boutons >div.wp-block-group__inner-container{
@@ -278,13 +285,17 @@ input.input-gouts{
     flex-direction: row;
 }
 
+.boutons-plus-moins{
+    gap: 0 !important;
+}
 .moins, .plus{
     background-color: #DC9F96;
-    width: 1.938rem;
-    height: 1.719rem;
+    width: 31px;
+    height: 28px;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    margin: 0;
 
     
 
@@ -298,12 +309,13 @@ input.input-gouts{
 }
 .plus {
   border-radius: 0 5px 0 0;
-  border-bottom: ;
+  border-bottom : 0.25px solid white; 
 }
 
 .moins{
     border-radius: 0 0 5px 0;
-    
+    border-top : 0.25px solid white; 
+
 }
 .plus-moins .is-vertical {
     background-color: transparent !important;
@@ -336,4 +348,46 @@ input.input-gouts{
 .wp-block-button__link .wp-element-button {
     background-color: transparent !important;
     z-index: 2;
+}
+
+.input-plus-moins{
+    position: relative;
+}
+
+/*séparateur */
+.separateur-horizontal {
+    color: white;
+    width: 860px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+/*formulaire commande */
+
+.titre-formulaire{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+.formulaires-commande{
+    display: flex;
+    justify-content: center;
+}
+
+input.label-formulaire{
+    width: 383px !important;
+    height: 71px !important;
+    border-radius: 7px !important;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04) !important;
+    border-style: none;
+
+}
+
+
+.jet-form-builder__label-text{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
