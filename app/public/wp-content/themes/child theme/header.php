@@ -28,7 +28,8 @@
                                             } ?>><?php bloginfo('description'); ?></div>
             </div>
             <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <img src="<?= get_stylesheet_directory_uri() . "/images/Logo.png" ?>">
+
+                <a href="http://planty.local/accueil/"><img src="<?= get_stylesheet_directory_uri() . "/images/Logo.png" ?>"></a>
                 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
 
             </nav>

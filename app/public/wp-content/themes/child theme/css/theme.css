@@ -119,7 +119,6 @@ nav li a {
 /* page INDEX */
 
 
-
 /*section gouts */
 
 /* FRAISE */
@@ -238,11 +237,7 @@ nav li a {
 
 .groupe-quantites div.wp-block-group__inner-container{
     display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
     align-items: center !important;
-    flex-wrap: wrap !important;
-    margin-right: 20px;
 }
 .wp-block-group__inner-container{
 
@@ -391,3 +386,20 @@ input.label-formulaire{
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
+
+.elementor hr{
+    background-color: white !important;
+    z-index: 3;
+    }
+     hr.separateur-vertical{
+        width: 1px !important;
+        height: 457px !important;
+        z-index: 4;
+        margin-right: 38px !important;
+        margin-left: 38px !important;
+
+        
+        
+    }
+    
