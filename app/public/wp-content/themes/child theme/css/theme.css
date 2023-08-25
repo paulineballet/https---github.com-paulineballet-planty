@@ -121,22 +121,38 @@ nav li a {
 
 /*section gouts */
 
-/* FRAISE */
+.conteneur{
+    display: flex !important;
+    justify-content: center !important;
 
+}
+
+/* FRAISE */
 .gout {
     
     display: flex;
     align-items: center !important;
     justify-content: center !important;
-    width: 393px !important;
-    height: 262px !important;
+    width: 24.563rem !important;
+    height: 16.375rem !important;
 }
 
+
 .conteneur-gouts{
-    width: 393px !important;
-    height: 262px !important;
+    width:  24.563rem!important;
+    height: 16.375rem !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+@media screen and (max-width: 800px) {
+    .conteneur{
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+    }
 }
 
 /* page NOUS RENCONTRER */
@@ -275,9 +291,15 @@ input.input-gouts{
     border-style: none;
 }
 
+.groupe-boutons{
+    width: 100%;
+
+}
 .groupe-boutons >div.wp-block-group__inner-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .boutons-plus-moins{
@@ -403,3 +425,8 @@ input.label-formulaire{
         
     }
     
+/* responsive */
+
+/*****ACCUEIL ******/
+
+@media (max-width: ) { ... }
