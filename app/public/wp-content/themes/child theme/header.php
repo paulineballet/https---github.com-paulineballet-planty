@@ -31,6 +31,7 @@
 
                 <a href="http://planty.local/accueil/"><img src="<?= get_stylesheet_directory_uri() . "/images/Logo.png" ?>"></a>
                 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'menu-commander', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
 
             </nav>
         </header>

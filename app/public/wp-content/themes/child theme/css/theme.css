@@ -51,7 +51,7 @@ nav img{
     margin-top: 31px;
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
         nav img{
             margin-left: 0;
             margin-top: 20px;
@@ -76,7 +76,7 @@ nav li a {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
    header  #menu{
         display: flex;
         flex-direction: column;
@@ -87,7 +87,7 @@ nav li a {
     display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   #menu ul{
          display: flex;
          flex-direction: column;
@@ -99,44 +99,85 @@ nav li a {
     margin-right: 40px;
 
 }
+@media screen and (max-width: 680px) {
+div .menu-menu-principal-container{
+ 
+    justify-content: center;
+}
+}
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 680px) {
     .page-item-13{
         margin-top: 20px;
         margin-right: 0;
         margin-bottom: 20px;
      }
    }
+.menu-menu-principal-container{
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
 
-.page-item-13 a{
+.admin a{
+    color: black;
+    margin-right: 40px;
+
+    
+}
+.admin a:visited{
     color: black;
 }
-.page-item-13 a:visited{
-    color: black;
-}
-.page-item-13 a:hover{
+ .admin a:hover{
     font-family: "Syne", sans-serif;
     font-size: 13px;
     font-weight: 700;
 }
-.page-item-8 {
+
+@media screen and (max-width: 680px) {
+    .menu-item-17 a{
+        margin-right: 0 !important;
+        margin-top: 15px !important;
+    }
+    .admin a{
+        margin-right: 0 !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+.menu-item-17 a{
+    color: black;
+    margin-right: 40px;
+}
+.menu-item-17 a:visited{
+    color: black;
+}
+.menu-item-17 a:hover{
+    font-family: "Syne", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+.menu-commander-container {
     background-color: var(--rose);
     padding: 31px 61px;
     transition: 0.2s;
 }
 
-.page-item-8 a{
+.menu-commander-container a{
     color: white;
 }
-.page-item-8 a:visited{
+.menu-commander-container a:visited{
     color: white !important ;
 }
 
-.page-item-8:hover{
+.menu-commander-container:hover{
    background-color: #c02e44;
 }
 
-.page-item-8 a:hover{
+.menu-commander-container a:hover{
     color: white;
 }
  /* enlever modifier */
@@ -146,6 +187,29 @@ nav li a {
 
 /* page INDEX */
 
+/* section 1 */ 
+@media screen and (max-width: 440px) {
+
+.elementor-container.elementor-column-gap-default {
+    min-height: 120px !important;
+
+}
+}
+
+/*section l'énergie des plantes */
+@media screen and (max-width: 800px) {
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-5e32e9a.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    margin-top: 80px;
+
+}
+}
+/*ECART TITRE L'ENERGIE DES PLANTES */
+
+@media screen and (max-width: 500px) {
+    .elementor-38 .elementor-element.elementor-element-ac7d359 > .elementor-widget-container {
+        padding: 6% 0% 6% 0%;
+    }
+}
 
 /*section gouts */
 
@@ -165,12 +229,53 @@ nav li a {
     height: 16.375rem !important;
 }
 
+@media screen and (max-width: 800px) {
+    .gout{
+        width: 18.563rem !important;
+    height: 12.375rem !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    }
+}
+@media screen and (max-width: 440px) {
+    .gout{
+        width: 10rem !important;
+    height: 9rem !important;
+    }
+    .gout h2{
+        font-size: 18px !important;
 
+    }
+}
+
+@media screen and (max-width: 800px) {
+.elementor-container.elementor-column-gap-default {
+    display: flex;
+    justify-content: center;
+}
+}
 .conteneur-gouts{
     width:  24.563rem!important;
     height: 16.375rem !important;
     align-items: center !important;
     justify-content: center !important;
+}
+
+@media screen and (max-width: 800px) {
+    .conteneur-gouts{
+        width: 18.563rem !important;
+    height: 12.375rem !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    }
+}
+@media screen and (max-width: 440px) {
+    .conteneur-gouts{
+        width: 10rem !important;
+    height: 9rem !important;
+    }
 }
 
 @media screen and (max-width: 800px) {
