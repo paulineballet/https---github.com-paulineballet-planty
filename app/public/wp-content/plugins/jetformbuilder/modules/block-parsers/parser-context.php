@@ -108,6 +108,15 @@ class Parser_Context {
 	public function apply_request() {
 		/** @var Field_Data_Parser $parser */
 		foreach ( $this->iterate_parsers() as $parser ) {
+			/**
+			 * We need to iterate over the value before setting the context
+			 * for the case when a large number of records are passed through
+			 * a single Field_Data_Parser object. As in the case of exporting
+			 *
+			 * @see https://github.com/Crocoblock/issues-tracker/issues/3356
+			 */
+			$parser->reset();
+
 			try {
 				$parser->set_request();
 
@@ -134,9 +143,11 @@ class Parser_Context {
 				switch ( $exception->getMessage() ) {
 
 					case Module::IS_CONDITIONAL:
+						$prev = $this->is_inside_conditional();
 						$this->set_inside_conditional( true );
 
 						yield from $this->generate_blocks( $exception->get_inner() );
+						$this->set_inside_conditional( $prev );
 						break;
 
 					case Module::NOT_FIELD_HAS_INNER:

@@ -6,6 +6,7 @@ namespace JFB_Modules\Block_Parsers;
 use Jet_Form_Builder\Classes\Arrayable\Array_Tools;
 use Jet_Form_Builder\Classes\Resources\Media_Block_Value;
 use Jet_Form_Builder\Classes\Resources\Uploaded_File_Path;
+use Jet_Form_Builder\Classes\Tools;
 use Jet_Form_Builder\Exceptions\Parse_Exception;
 use Jet_Form_Builder\Exceptions\Repository_Exception;
 use Jet_Form_Builder\Request\Exceptions\Plain_Value_Exception;
@@ -79,6 +80,8 @@ abstract class Field_Data_Parser implements Repository_Item_Instance_Trait {
 	 * @throws Exclude_Field_Exception|Parse_Exception
 	 */
 	final public function update_request() {
+		$this->errors = array();
+
 		$this->is_field_visible();
 		$this->set_request();
 		$this->check_response();
@@ -104,12 +107,10 @@ abstract class Field_Data_Parser implements Repository_Item_Instance_Trait {
 	}
 
 	protected function check_response() {
-		$this->errors = array();
-
 		if (
 			$this->context->is_inside_conditional() ||
-			( empty( $this->value ) && ! $this->is_required ) ||
-			! empty( $this->value )
+			( Tools::is_empty( $this->value ) && ! $this->is_required ) ||
+			! Tools::is_empty( $this->value )
 		) {
 			return;
 		}
@@ -295,6 +296,12 @@ abstract class Field_Data_Parser implements Repository_Item_Instance_Trait {
 		}
 
 		return iterator_to_array( $this->iterate_inner_values() );
+	}
+
+	public function reset() {
+		$this->value          = null;
+		$this->file           = null;
+		$this->inner_contexts = null;
 	}
 
 	public function get_setting( string $attr_name ) {

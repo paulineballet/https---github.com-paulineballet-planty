@@ -119,6 +119,10 @@ class Form extends Widget_Base implements Widget_Base_It {
 		return array( 'jet-form-builder' );
 	}
 
+	public function get_style_depends() {
+		return array( 'jet-form-builder-frontend' );
+	}
+
 	private function jet_form_builder_slug() {
 		return jet_form_builder()->post_type->slug();
 	}
@@ -1710,6 +1714,24 @@ class Form extends Widget_Base implements Widget_Base_It {
 					),
 					'selectors'  => array(
 						$this->selector( '__field.textarea-field' ) => 'height:{{SIZE}}px;min-height:{{SIZE}}px;',
+					),
+				)
+			);
+
+			$this->add_control(
+				'fields_color_scheme',
+				array(
+					'label'       => __( 'Color Scheme', 'jet-form-builder' ),
+					'type'        => Controls_Manager::SELECT,
+					'description' => __( 'Affects default browser UI elements like date and time icons, UI etc.', 'jet-form-builder' ),
+					'default'     => 'normal',
+					'options'     => array(
+						'normal' => __( 'Normal', 'jet-form-builder' ),
+						'light'  => __( 'Light', 'jet-form-builder' ),
+						'dark'   => __( 'Dark', 'jet-form-builder' ),
+					),
+					'selectors'   => array(
+						$this->selector( ' input' ) => 'color-scheme: {{VALUE}};',
 					),
 				)
 			);
