@@ -25,6 +25,9 @@ header {
 footer {
     background-color: white;
     height: 50px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 footer a{
@@ -34,11 +37,8 @@ footer a{
     font-family: "Syne", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
-    margin-top: 20px !important;
     
 }
 #branding{
@@ -356,16 +356,11 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 /*  PAGE COMMANDER */
 
-@media screen and (max-width: 950px) {
-   div .votre-commande{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-
-    }
+@media screen and (max-width: 440px){
+.elementor-container.elementor-column-gap-default {
+    min-height: 0 !important;
 }
-
+}
 
 .gout-quantite{
     width: 192.533px;
@@ -532,6 +527,12 @@ input.input-gouts{
     margin-bottom: 30px !important;
 }
 
+@media screen and (max-width: 940px) {
+    .separateur-horizontal {
+    width: 100%;
+}
+}
+
 /*formulaire commande */
 
 @media screen and (max-width: 460px) {
@@ -592,7 +593,7 @@ input.label-formulaire{
 
     @media screen and (max-width: 940px){
         hr.separateur-vertical{
-            width: 457px !important;
+            width: 100% !important;
             height: 1px !important;
             margin-top: 20px !important;
             margin-bottom: 20px !important;
