@@ -179,7 +179,6 @@ div .menu-menu-principal-container{
 
 /* section 1 */ 
 @media screen and (max-width: 440px) {
-
 .elementor-container.elementor-column-gap-default {
     min-height: 120px !important;
 
@@ -356,6 +355,10 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 /*  PAGE COMMANDER */
 
+.elementor-13 .elementor-element.elementor-element-085c478 > .elementor-container{
+    min-height: 0 !important;
+}
+
 @media screen and (max-width: 440px){
 .elementor-container.elementor-column-gap-default {
     min-height: 0 !important;
@@ -398,9 +401,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     display: flex !important;
     align-items: center !important;
 }
-.wp-block-group__inner-container{
 
-}
 .empilement-plus-moins{
     display: flex;
     flex-direction: column;
